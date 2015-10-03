@@ -1,0 +1,33 @@
+#hero-image
+	background-image: url(/assets/img/spring2.jpg)
+	background-size: cover
+	height: 400px
+	width: 100%
+
+#home
+	+outer-container
+
+#posts-column
+	clear: both
+	+span-columns(7)
+
+	ul>li
+		list-style: none
+	
+		h3
+			margin: 0
+
+	+media($mobile)
+		+span-columns(4)
+		text-align: left
+		padding: 0px 15px
+
+#social-column
+	+span-columns(5)
+
+	+media($mobile)
+		+span-columns(4)
+		text-align: center
+
+	#facebook
+		padding: 15px 0px

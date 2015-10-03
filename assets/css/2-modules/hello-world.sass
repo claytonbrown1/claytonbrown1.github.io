@@ -1,0 +1,43 @@
+.title
+  z-index: 1000
+  position: absolute
+  color: white
+  text-align: center
+  width: 100%
+  top: 30%
+  
+  .name
+    font-size: 4vw
+    text-transform: uppercase
+    
+  span
+    font-size: 2vw
+    
+  +media($mobile)
+    top: 15%
+    
+    .name
+      font-size: 6vw
+    
+    span
+      font-size: 4vw
+
+video#bgvid
+  position: relative
+  height: 100%
+  width: 100%
+  bottom: 0%
+  overflow: hidden
+  left: 0%
+  
+  +media($mobile)
+    display: none
+  
+.poster img
+  width: 100%
+  bottom: 0
+  position: relative
+  display: none
+  
+  +media($mobile)
+    display: block
