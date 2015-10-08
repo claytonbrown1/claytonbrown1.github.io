@@ -1,0 +1,82 @@
+a.anchor
+  visibility: hidden
+  display: block
+  position: relative
+  top: -80px
+
+.about-container
+  font-size: 20px
+  margin: 10px 50px
+  
+  .about-em
+    color: $primary-color
+  
+#home
+	+outer-container
+
+.section-header
+  font-size: 30px
+  color: $primary-color
+  
+  +media($mobile)
+    text-align: center
+
+.project-container
+  padding-top: 10px
+  
+  .project
+    overflow: hidden
+    margin-bottom: 10px
+      
+    .project-image
+      +span-columns(4)
+
+      img
+        height: auto
+        max-width: 100%
+        
+      +media($mobile)
+        +span-columns(4)
+
+    .project-info
+      +span-columns(7)
+      
+      #title
+        font-size: 25px
+        padding: 0
+        margin: 0
+        
+      +media($mobile)
+        +span-columns(4)
+      
+        #title
+          text-align: center
+        
+        .language-icon
+          text-align: center
+          
+        p
+          padding: 0 10px
+
+    &:nth-child(odd)
+      background-color: #ecf0f1
+
+#posts-container
+  clear: both
+  
+  ul
+    margin: 0
+    padding: 0
+    
+  ul > li
+    list-style: none
+    
+    h3
+      margin: 0
+      
+    +media($mobile)
+      padding: 0 10px
+  
+  +media($mobile)
+    +span-columns(4)
+    text-align: left

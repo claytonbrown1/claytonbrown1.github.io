@@ -1,0 +1,71 @@
+.contact-header
+  width: 100%
+  height: 250px;
+  padding-top: 120px;
+  margin-bottom: 50px;
+  text-align: center
+  font-size: 50px
+  color: white
+  background-image: url('/assets/img/low_contrast_linen.png')
+  background-repeat: repeat
+  
+  +media($mobile)
+    padding-top: 90px
+    height: 200px
+    margin-bottom: 25px
+  
+.contact-container
+  +outer-container
+  padding: 10px 100px
+  
+  +media($mobile)
+    padding: 10px
+  
+  .contact-title
+    font-size: 25px
+  
+  #contact-left
+    +span-columns(7)
+    
+    +media($mobile)
+      +span-columns(4)
+  
+    #contact-form
+      border: none
+
+      .contact-field
+        margin-bottom: 20px
+        width: 80%
+        border: none
+        border-bottom: 1px solid #ddd
+        font-size: 20px
+
+        &:focus
+          outline: none
+
+        +media($mobile)
+          width: 100%
+
+      textarea
+        height: 150px
+
+      .contact-submit
+        background-color: $primary-color
+        color: white
+        border: none
+        font-size: 20px
+        transition: background-color .5s
+
+        &:hover
+          background-color: darken($primary-color, 20%)
+        
+  #contact-right
+    +span-columns(4)
+    
+    +media($mobile)
+      +span-columns(4)
+      padding-top: 10px
+    
+    .contact-social
+      padding-bottom: 20px
+      
