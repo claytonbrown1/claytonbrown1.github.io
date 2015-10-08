@@ -1,0 +1,40 @@
+- name: Kentucky Capitol Watch
+  website: www.kycapitolwatch.com
+  image: kycapitolwatch-960.jpg
+  languages:
+    - code: devicon-html5-plain-wordmark colored
+      link: http://www.w3.org/TR/html5/
+    - code: devicon-css3-plain-wordmark colored
+      link: http://www.w3.org/Style/CSS/
+    - code: devicon-sass-original colored
+      link: http://sass-lang.com/
+    - code: devicon-php-plain colored
+      link: https://secure.php.net/
+    - code: devicon-jquery-plain-wordmark colored
+      link: http://jquery.com/
+    - code: devicon-mysql-plain-wordmark colored
+      link: https://www.mysql.com/
+    
+- name: Susan Westrom for State Representative
+  website: www.susanwestrom.com
+  image:
+  languages:
+    - code: devicon-wordpress-plain-wordmark colored
+      link: https://wordpress.org/
+    - code: devicon-html5-plain-wordmark colored
+      link: http://www.w3.org/TR/html5/
+    - code: devicon-css3-plain-wordmark colored
+      link: http://www.w3.org/Style/CSS/
+    
+- name: SkyGlobal
+  website: #
+  image:
+  languages:
+    - code: devicon-html5-plain-wordmark colored
+      link: http://www.w3.org/TR/html5/
+    - code: devicon-css3-plain-wordmark colored
+      link: http://www.w3.org/Style/CSS/
+    - code: devicon-sass-original colored
+      link: http://sass-lang.com/
+    - code: devicon-jquery-plain-wordmark colored
+      link: http://jquery.com/
