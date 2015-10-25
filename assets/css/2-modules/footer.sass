@@ -1,5 +1,5 @@
 footer
-  background-color: #666
+  background-color: white
   padding: 10px 0
   
   .footer-menu
@@ -12,7 +12,10 @@ footer
       padding: 0px 10px
       
       a
-        color: black
+        color: $text-color
+        
+      a:hover
+        text-decoration: underline
         
       +media($mobile)
         display: block
@@ -20,3 +23,9 @@ footer
   
   .social
     text-align: center
+    
+    a
+      color: $text-color
+      
+    a:hover
+      color: lighten($text-color, 20%)

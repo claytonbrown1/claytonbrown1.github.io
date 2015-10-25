@@ -17,7 +17,7 @@
   +media($mobile)
     display: block
     float: right
-    padding-top: 3%
+    padding-top: 8px
   
 header
   display: block
@@ -46,10 +46,15 @@ header
     +media($mobile)
       display: block
       padding: 0 10px
+      border-top: 1px solid #95a5a6
     
   .logo
     font-size: 30px
     font-family: Lato
+    text-decoration: none
+    
+    a:hover
+      text-decoration: none
     
     +media($mobile)
       display: none    
@@ -58,3 +63,16 @@ header
     float: right
     display: none
     text-align: right
+    width: 100%
+    background-color: #bdc3c7
+  
+.language-icon
+  padding: 0
+  
+.language-icon > li
+  display: inline
+  font-size: 50px
+  padding: 0 5px
+  
+  &:hover
+    opacity: .5

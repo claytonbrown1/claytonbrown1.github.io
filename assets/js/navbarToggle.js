@@ -1,4 +1,5 @@
 $('#mobile-menu-button').click(function(){
+    event.preventDefault();
 		$('.menu').slideToggle();
 	})
 
