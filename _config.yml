@@ -1,4 +1,4 @@
-name: Shelby County Democratic Party
-markdown: redcarpet
+name: Clayton Brown
+markdown: kramdown
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
