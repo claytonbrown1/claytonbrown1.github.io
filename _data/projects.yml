@@ -1,6 +1,6 @@
 - name: Shelby County Democratic Party
   website: #
-  image: kycapitolwatch-960.jpg
+  image: shelbydem.png
   descript: |
     When I was designing this website I had three goals in mind. First, I wanted to make the user feel like the website reflected the design of the national <a href="http://www.democrats.org/">Democratic Party</a> while still maintaining it’s unique identity within the community. I chose a similar color scheme and replicated parts of the national website, such as their header and signup bar.<br><br>
     Second, I wanted to make sure that the website would be easy to update if in the future I wasn’t the person maintaining the site. Having read about Jekyll, I decided that it gave me exactly what I wanted. I was able to design the site how I liked while still having the ability to make blog posts.<br><br>
@@ -19,7 +19,7 @@
 
 - name: Kentucky Capitol Watch
   website: http://www.kycapitolwatch.com
-  image: kycapitolwatch-960.jpg
+  image: kycapitol.png
   descript: |
     This was my first personal project and really my most extensive one too. I had help from my friend <a href="https://github.com/austinholbrook">Austin Holbrook</a> who did most of the back-end work. The site scrapes data from the <a href="http://lrc.ky.gov/">Legislative Research Commission</a> in Frankfort, KY and displays it in a searchable and smarter way. Unlike the LRC, we were able to display legislator’s fundraising numbers, their district within a Google Map, and embed their Twitter Feed. This project isn’t finished, as we are still adding features to it.
   languages:
@@ -38,7 +38,7 @@
     
 - name: Susan Westrom for State Representative
   website: http://www.susanwestrom.com
-  image:
+  image: susanwestrom.png
   descript: |
     Kentucky State Representative Susan Westrom hired me to manage the technology aspect of her campaign. The priority being, to redesign and rehost her campaign website. Her site was already using Wordpress, however it was too old to transfer over to a new version. I was able to reproduce most of the content from the old site on the new one and updated content such as the list of district precincts.
   languages:
@@ -51,7 +51,7 @@
     
 - name: SkyGlobal
   website: #
-  image:
+  image: skyglobal.png
   descript: |
     lorum ipsum
   languages:
