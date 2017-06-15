@@ -8,11 +8,11 @@ title: Clayton Brown
       <div class="title">
         <div class="name">Clayton Brown</div>
         <br>
-        <span>Web Design // OpenGov</span>
+        <span>Web Developer // Tech Consultant</span>
       </div>
       <div class="arrow">
-        <a href="#project">
-          <i class="fa fa-angle-down fa-4x"></i>        
+        <a data-scroll href="#project">
+          <i class="fa fa-angle-down fa-4x"></i>
         </a>
       </div>
         <div class="filter"></div>
@@ -28,22 +28,17 @@ title: Clayton Brown
 <script src="assets/js/hello-world.js"></script>
 <a class="anchor" id="project"></a>
 <div id="home">
-  <div class="about-container">
-    <p>My name is Clayton Brown, I'm a self-taught Web Designer and Open Government advocate. I create clean, responsive websites and study how data and technology can make government more efficient and accountable.  
-    </p>
-  </div>
   <div class="project-container">
     <div class="section-header">Recent Projects</div>
 
-    {% for project in site.data.projects limit:3 %}
+    {% for project in site.data.projects %}
     <div class="project">
       <div class="project-image">
-        <img src="assets/img/kycapitolwatch-960.jpg">
+        <img src="assets/img/projects/{{ project.image }}">
       </div>
       <div class="project-info">
-        <div id="title"><a href="{{ project.website }}">{{ project.name }}</a></div>
+        <div id="title">{{ project.name }}</div>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent augue neque, mattis sed ipsum in, facilisis pellentesque dolor. Nunc non sollicitudin velit, non accumsan libero. Cras vestibulum laoreet tortor sed aliquet. Praesent ut orci vitae risus mattis elementum. Vivamus posuere diam nisi, et pharetra orci pellentesque eget. Aenean congue dolor vel arcu ultricies vehicula. Quisque luctus tincidunt sem in scelerisque.</p>
         <ul class="language-icon">
         {% for language in project.languages %}
           <li><a href="{{ language.link }}">
@@ -55,22 +50,11 @@ title: Clayton Brown
           </a></li>
         {% endfor %}
         </ul>
+        <a href="{{ project.website }}" class="project-link">Visit Website</a>
       </div>
     </div>
     {% endfor %}
   </div>
-	<div id="posts-container">
-    <div class="section-header">Recent Posts</div>
-	  <ul class="posts">
-    {% for post in site.posts limit:3 %}
-      <li>
-				<h3><a href="{{ post.url}}">{{ post.title }}</a></h3>
-				<span>{{ post.date | date_to_string }}</span>
-				{{ post.excerpt }}
-			</li>
-			<hr>
-    {% endfor %}
-  </ul>
-	</div>
 </div>
-<script src="assets/js/smoothScroll.js"></script>
+<a class="anchor" id="contact"></a>
+<script src="assets/js/smooth-scroll.js"></script>

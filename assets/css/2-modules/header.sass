@@ -1,24 +1,24 @@
 .mobile-logo
   display: none
-  
+
   +media($mobile)
     display: block
     font-family: Lato
     font-size: 20px
     padding: 10px 10px
-  
+
     a
       color: $text-color
-  
-  
+
+
 #mobile-menu-button
   display: none
-  
+
   +media($mobile)
     display: block
     float: right
     padding-top: 8px
-  
+
 header
   display: block
   position: fixed
@@ -35,44 +35,44 @@ header
     display: inline
     padding: 0px 20px
     font-size: 20px
-    
+
     a
       color: $text-color
       text-transform: uppercase
-      
+
     a:hover
       text-decoration: underline
-    
+
     +media($mobile)
       display: block
       padding: 0 10px
       border-top: 1px solid #95a5a6
-    
+
   .logo
     font-size: 30px
     font-family: Lato
     text-decoration: none
-    
+
     a:hover
       text-decoration: none
-    
+
     +media($mobile)
-      display: none    
-    
+      display: none
+
   +media($mobile)
     float: right
     display: none
     text-align: right
     width: 100%
     background-color: #bdc3c7
-  
+
 .language-icon
   padding: 0
-  
+
 .language-icon > li
   display: inline
   font-size: 50px
   padding: 0 5px
-  
+
   &:hover
     opacity: .5

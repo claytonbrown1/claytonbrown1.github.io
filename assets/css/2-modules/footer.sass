@@ -1,31 +1,70 @@
 footer
   background-color: white
   padding: 10px 0
-  
-  .footer-menu
-    padding: 10px 0px
-    margin: 0
-    text-align: center
-    
-    li
-      display: inline
-      padding: 0px 10px
-      
-      a
-        color: $text-color
-        
-      a:hover
-        text-decoration: underline
-        
-      +media($mobile)
-        display: block
-        padding: 10px 10px
-  
-  .social
-    text-align: center
-    
-    a
-      color: $text-color
-      
-    a:hover
-      color: lighten($text-color, 20%)
+
+.contact-container
+  +outer-container
+  padding: 10px 100px
+
+  +media($mobile)
+    padding: 10px
+
+  .contact-title
+    font-size: 25px
+
+  #contact-left
+    +span-columns(6)
+
+    +media($mobile)
+      +span-columns(4)
+
+    #contact-form
+      border: none
+
+      .contact-field
+        margin-bottom: 20px
+        width: 80%
+        border: none
+        border-bottom: 1px solid #ddd
+        font-size: 20px
+
+        &:focus
+          outline: none
+
+        +media($mobile)
+          width: 100%
+
+      textarea
+        height: 150px
+
+      .contact-submit
+        background-color: $primary-color
+        color: white
+        border: none
+        font-size: 20px
+        transition: background-color .5s
+        padding: 5px 20px
+
+        &:hover
+          background-color: darken($primary-color, 20%)
+
+  #contact-right
+    +span-columns(6)
+
+    ul li
+      list-style: none
+      padding-bottom: 20px
+
+      span
+        padding-left: 20px
+        font-size: 20px
+
+    .fa-linkedin
+      color: #0077b5
+
+    .fa-github-alt, .fa-envelope-o
+      color: black
+
+    +media($mobile)
+      +span-columns(4)
+      padding-top: 10px

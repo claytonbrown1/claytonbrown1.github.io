@@ -3,9 +3,7 @@
 html {
   box-sizing: border-box; }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -246,7 +244,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -520,27 +519,87 @@ header {
 footer {
   background-color: white;
   padding: 10px 0; }
-  footer .footer-menu {
-    padding: 10px 0px;
-    margin: 0;
-    text-align: center; }
-    footer .footer-menu li {
-      display: inline;
-      padding: 0px 10px; }
-      footer .footer-menu li a {
-        color: #111; }
-      footer .footer-menu li a:hover {
-        text-decoration: underline; }
-      @media screen and (min-width: 0px) and (max-width: 849px) {
-        footer .footer-menu li {
-          display: block;
-          padding: 10px 10px; } }
-  footer .social {
-    text-align: center; }
-    footer .social a {
-      color: #111; }
-    footer .social a:hover {
-      color: #444444; }
+
+.contact-container {
+  max-width: 85.625em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 100px; }
+  .contact-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 0px) and (max-width: 849px) {
+    .contact-container {
+      padding: 10px; } }
+  .contact-container .contact-title {
+    font-size: 25px; }
+  .contact-container #contact-left {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .contact-container #contact-left:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 0px) and (max-width: 849px) {
+      .contact-container #contact-left {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .contact-container #contact-left:last-child {
+          margin-right: 0; } }
+    .contact-container #contact-left #contact-form {
+      border: none; }
+      .contact-container #contact-left #contact-form .contact-field {
+        margin-bottom: 20px;
+        width: 80%;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        font-size: 20px; }
+        .contact-container #contact-left #contact-form .contact-field:focus {
+          outline: none; }
+        @media screen and (min-width: 0px) and (max-width: 849px) {
+          .contact-container #contact-left #contact-form .contact-field {
+            width: 100%; } }
+      .contact-container #contact-left #contact-form textarea {
+        height: 150px; }
+      .contact-container #contact-left #contact-form .contact-submit {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        font-size: 20px;
+        -webkit-transition: background-color .5s;
+                transition: background-color .5s;
+        padding: 5px 20px; }
+        .contact-container #contact-left #contact-form .contact-submit:hover {
+          background-color: #164666; }
+  .contact-container #contact-right {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .contact-container #contact-right:last-child {
+      margin-right: 0; }
+    .contact-container #contact-right ul li {
+      list-style: none;
+      padding-bottom: 20px; }
+      .contact-container #contact-right ul li span {
+        padding-left: 20px;
+        font-size: 20px; }
+    .contact-container #contact-right .fa-linkedin {
+      color: #0077b5; }
+    .contact-container #contact-right .fa-github-alt, .contact-container #contact-right .fa-envelope-o {
+      color: black; }
+    @media screen and (min-width: 0px) and (max-width: 849px) {
+      .contact-container #contact-right {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%;
+        padding-top: 10px; }
+        .contact-container #contact-right:last-child {
+          margin-right: 0; } }
 
 .title {
   z-index: 1000;
@@ -624,7 +683,7 @@ a.anchor {
     color: #2980b9; }
 
 #home {
-  max-width: 85.625em;
+  max-width: 95%;
   margin-left: auto;
   margin-right: auto; }
   #home::after {
@@ -644,12 +703,15 @@ a.anchor {
   padding-top: 10px; }
   .project-container .project {
     overflow: hidden;
-    margin-bottom: 10px; }
+    padding-bottom: 10px; }
+    @media screen and (min-width: 0px) and (max-width: 849px) {
+      .project-container .project {
+        padding-bottom: 25px; } }
     .project-container .project .project-image {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%; }
+      width: 57.35098%; }
       .project-container .project .project-image:last-child {
         margin-right: 0; }
       .project-container .project .project-image img {
@@ -667,7 +729,7 @@ a.anchor {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 57.35098%; }
+      width: 40.29137%; }
       .project-container .project .project-info:last-child {
         margin-right: 0; }
       .project-container .project .project-info #title {
@@ -685,33 +747,30 @@ a.anchor {
           .project-container .project .project-info #title {
             text-align: center; }
           .project-container .project .project-info .language-icon {
-            text-align: center; }
-          .project-container .project .project-info p {
-            padding: 0 10px; } }
+            text-align: center; } }
+    .project-container .project .project-link {
+      font-size: 20px;
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      color: black;
+      -webkit-transition: all .25s;
+              transition: all .25s; }
+      .project-container .project .project-link:hover {
+        background-color: #2980b9;
+        color: white; }
+      @media screen and (min-width: 0px) and (max-width: 849px) {
+        .project-container .project .project-link {
+          float: left;
+          display: block;
+          margin-right: 7.42297%;
+          width: 46.28851%;
+          margin-left: 26.85574%;
+          text-align: center; }
+          .project-container .project .project-link:last-child {
+            margin-right: 0; } }
     .project-container .project:nth-child(odd) {
       background-color: #ecf0f1; }
-
-#posts-container {
-  clear: both; }
-  #posts-container ul {
-    margin: 0;
-    padding: 0; }
-  #posts-container ul > li {
-    list-style: none; }
-    #posts-container ul > li h3 {
-      margin: 0; }
-    @media screen and (min-width: 0px) and (max-width: 849px) {
-      #posts-container ul > li {
-        padding: 0 10px; } }
-  @media screen and (min-width: 0px) and (max-width: 849px) {
-    #posts-container {
-      float: left;
-      display: block;
-      margin-right: 7.42297%;
-      width: 100%;
-      text-align: left; }
-      #posts-container:last-child {
-        margin-right: 0; } }
 
 .jekyll-logo {
   height: 50px;
@@ -784,8 +843,8 @@ a.anchor {
       padding: 10px;
       margin-left: 10px;
       border: 2px solid #333;
-      -webkit-transition: background-color 0.5s, border-color 0.5s, color 0.5s;
-              transition: background-color 0.5s, border-color 0.5s, color 0.5s; }
+      -webkit-transition: background-color .5s, border-color .5s, color .5s;
+              transition: background-color .5s, border-color .5s, color .5s; }
       .blog-container .blog-post .read-more:hover {
         background-color: #2980b9;
         color: white;
@@ -821,157 +880,3 @@ a.anchor {
   @media screen and (min-width: 0px) and (max-width: 849px) {
     .post-content {
       padding: 10px 10px; } }
-
-.portfolio-header {
-  width: 100%;
-  height: 250px;
-  padding-top: 120px;
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 50px;
-  color: white;
-  background-image: url("/assets/img/low_contrast_linen.png");
-  background-repeat: repeat; }
-  @media screen and (min-width: 0px) and (max-width: 849px) {
-    .portfolio-header {
-      padding-top: 90px;
-      height: 200px;
-      margin-bottom: 25px; } }
-
-.portfolio-project {
-  overflow: hidden;
-  padding-bottom: 80px; }
-
-.portfolio-container {
-  max-width: 85.625em;
-  margin-left: auto;
-  margin-right: auto;
-  clear: both; }
-  .portfolio-container::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media screen and (min-width: 0px) and (max-width: 849px) {
-    .portfolio-container {
-      padding: 10px; } }
-
-.portfolio-image {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%; }
-  .portfolio-image:last-child {
-    margin-right: 0; }
-  .portfolio-image img {
-    height: auto;
-    width: 100%; }
-
-.portfolio-info {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%; }
-  .portfolio-info:last-child {
-    margin-right: 0; }
-  .portfolio-info #title {
-    font-size: 24px;
-    font-weight: 700; }
-
-.contact-header {
-  width: 100%;
-  height: 250px;
-  padding-top: 120px;
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 50px;
-  color: white;
-  background-image: url("/assets/img/low_contrast_linen.png");
-  background-repeat: repeat; }
-  @media screen and (min-width: 0px) and (max-width: 849px) {
-    .contact-header {
-      padding-top: 90px;
-      height: 200px;
-      margin-bottom: 25px; } }
-
-.contact-container {
-  max-width: 85.625em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 100px; }
-  .contact-container::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media screen and (min-width: 0px) and (max-width: 849px) {
-    .contact-container {
-      padding: 10px; } }
-  .contact-container .contact-title {
-    font-size: 25px; }
-  .contact-container #contact-left {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 57.35098%; }
-    .contact-container #contact-left:last-child {
-      margin-right: 0; }
-    @media screen and (min-width: 0px) and (max-width: 849px) {
-      .contact-container #contact-left {
-        float: left;
-        display: block;
-        margin-right: 7.42297%;
-        width: 100%; }
-        .contact-container #contact-left:last-child {
-          margin-right: 0; } }
-    .contact-container #contact-left #contact-form {
-      border: none; }
-      .contact-container #contact-left #contact-form .contact-field {
-        margin-bottom: 20px;
-        width: 80%;
-        border: none;
-        border-bottom: 1px solid #ddd;
-        font-size: 20px; }
-        .contact-container #contact-left #contact-form .contact-field:focus {
-          outline: none; }
-        @media screen and (min-width: 0px) and (max-width: 849px) {
-          .contact-container #contact-left #contact-form .contact-field {
-            width: 100%; } }
-      .contact-container #contact-left #contact-form textarea {
-        height: 150px; }
-      .contact-container #contact-left #contact-form .contact-submit {
-        background-color: #2980b9;
-        color: white;
-        border: none;
-        font-size: 20px;
-        -webkit-transition: background-color 0.5s;
-                transition: background-color 0.5s;
-        padding: 5px 20px; }
-        .contact-container #contact-left #contact-form .contact-submit:hover {
-          background-color: #164666; }
-  .contact-container #contact-right {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .contact-container #contact-right:last-child {
-      margin-right: 0; }
-    .contact-container #contact-right ul li {
-      list-style: none;
-      padding-bottom: 20px; }
-      .contact-container #contact-right ul li span {
-        padding-left: 20px;
-        font-size: 20px; }
-    .contact-container #contact-right .fa-twitter {
-      color: #55acee; }
-    .contact-container #contact-right .fa-linkedin {
-      color: #0077b5; }
-    .contact-container #contact-right .fa-github-alt {
-      color: black; }
-    @media screen and (min-width: 0px) and (max-width: 849px) {
-      .contact-container #contact-right {
-        float: left;
-        display: block;
-        margin-right: 7.42297%;
-        width: 100%;
-        padding-top: 10px; }
-        .contact-container #contact-right:last-child {
-          margin-right: 0; } }
