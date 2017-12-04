@@ -692,9 +692,7 @@ a.anchor {
     display: table; }
 
 .section-header {
-  font-size: 30px;
-  font-weight: 700;
-  color: #2980b9; }
+  font-size: 30px; }
   @media screen and (min-width: 0px) and (max-width: 849px) {
     .section-header {
       text-align: center; } }
@@ -703,10 +701,12 @@ a.anchor {
   padding-top: 10px; }
   .project-container .project {
     overflow: hidden;
-    padding-bottom: 10px; }
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 5px #ddd; }
     @media screen and (min-width: 0px) and (max-width: 849px) {
       .project-container .project {
-        padding-bottom: 25px; } }
+        margin-bottom: 25px;
+        padding-bottom: 20px; } }
     .project-container .project .project-image {
       float: left;
       display: block;
@@ -775,6 +775,16 @@ a.anchor {
 .jekyll-logo {
   height: 50px;
   width: 100px;
+  display: inline-block; }
+
+.themify-logo {
+  height: 40px;
+  width: 100px;
+  display: inline-block; }
+
+.bourbon-logo {
+  height: 35px;
+  width: 125px;
   display: inline-block; }
 
 .blog-header {

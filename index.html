@@ -8,7 +8,7 @@ title: Clayton Brown
       <div class="title">
         <div class="name">Clayton Brown</div>
         <br>
-        <span>Web Developer // Tech Consultant</span>
+        <span>Web Developer // Digital Consultant</span>
       </div>
       <div class="arrow">
         <a data-scroll href="#project">
@@ -42,10 +42,10 @@ title: Clayton Brown
         <ul class="language-icon">
         {% for language in project.languages %}
           <li><a href="{{ language.link }}">
-            {% if language.code != 'jekyll-logo' %}
+            {% if language.code != 'jekyll-logo' and language.code != 'themify-logo' and language.code != 'bourbon-logo' %}
               <i class="{{ language.code }}"></i>
             {% else %}
-              <img src="/assets/img/jekyll-logo.png" class="jekyll-logo">
+              <img src="/assets/img/{{ language.code }}.png" class="{{ language.code }}">
             {% endif %}
           </a></li>
         {% endfor %}
